@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fx:controller="application.Views"
+	xmlns:fx="http://javafx.com/fxml">
+	<StackPane>
+		<GridPane fx:id="mGridPane"></GridPane>
+		<GridPane fx:id="mShape"></GridPane>
+		<VBox fx:id="mMask" styleClass="gameOver-mask">
+			<Label styleClass="gameOver-text">游戏结束</Label>
+			<Button fx:id="resetBtn">重新开始</Button>
+		</VBox>
+	</StackPane>
+
+	<VBox styleClass="side-info">
+		<HBox>
+				<Label text="等级: "></Label>
+				<Text text="0" fx:id="mLevel" />
+		</HBox>
+		<HBox>
+				<Label  text="分数: " />
+				<Text text="0" fx:id="mScore" />
+		</HBox>
+		<GridPane styleClass="preview-pane" fx:id="mPreview"></GridPane>
+		<Button styleClass="pause-btn" fx:id="pauseBtn">暂停</Button>
+		<VBox styleClass="tip">
+			<Label  >操作说明: </Label>
+			<Label  styleClass="label-text">↑ : 方块旋转</Label>
+			<Label  styleClass="label-text">→ : 向右移动</Label>
+			<Label  styleClass="label-text">← : 向左移动</Label>
+			<Label  styleClass="label-text">空格键 : 快速下落</Label>
+		</VBox>
+	</VBox>
+</HBox>

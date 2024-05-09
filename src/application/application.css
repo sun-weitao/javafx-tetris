@@ -1,0 +1,41 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+}
+.side-info{
+    -fx-padding: 150px 20px 0 20px ;
+    
+}
+.label-txt{
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0 10px 0;
+}
+.min-txt{
+    -fx-font-size: 18px;
+}
+.preview-shape{
+    -fx-padding: 10px 0 0 0;
+}
+.gameOver-mask{
+	-fx-pref-width: 100%;
+	-fx-pref-height: 100%;
+	-fx-background-color: rgba(0,0,0,0.7);
+	-fx-alignment: center;
+}
+.label-text{
+	-fx-line-spacing:20px;
+	-fx-padding:10px 0 0 0;
+}
+.preview-pane{
+	-fx-padding:10px 0 10px 0;
+}
+.gameOver-text{
+	-fx-font-size: 30px;
+	-fx-text-fill: '#fff';
+	-fx-padding: 20px;
+}
+.tip{
+	-fx-padding:20px 0 0 0;
+}
