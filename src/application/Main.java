@@ -63,14 +63,9 @@ public class Main extends Application {
 				}
 
 			});
-				
-			try{
-				Image icon = new Image(new FileInputStream(getClass().getResource("icon.png").getPath()));
-				primaryStage.getIcons().add(icon);
-			}catch (FileNotFoundException e) {
-				// TODO: handle exception
-				e.printStackTrace();
-			}
+			//fix bug java.io.FileNotFoundException
+			Image icon = new Image(Main.class.getResourceAsStream("icon.png"));
+			primaryStage.getIcons().add(icon);
 			// 禁止放大缩小
 			primaryStage.setResizable(false);
 			primaryStage.setTitle("俄罗斯方块");
